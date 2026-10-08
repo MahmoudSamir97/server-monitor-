@@ -1,0 +1,17 @@
+{
+  "name": "server-monitor",
+  "version": "1.0.0",
+  "description": "Real-time server health and log anomaly monitoring service",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.9.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.9.1",
+  "type": "module"
+}
