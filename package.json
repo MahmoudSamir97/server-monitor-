@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Real-time server health and log anomaly monitoring service",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:up": "docker compose -f apps/api/docker-compose.yml up -d",
+    "db:down": "docker compose -f apps/api/docker-compose.yml down",
+    "db:status": "docker compose -f apps/api/docker-compose.yml ps",
+    "dev:api": "pnpm --filter ./apps/api start:dev",
+    "dev:web": "pnpm --filter ./apps/web dev"
   },
   "devEngines": {
     "packageManager": {
